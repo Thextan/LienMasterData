@@ -1,0 +1,15 @@
+export interface LienDetail {
+	commoditylist: string;
+	quantity: numeric;
+	amount: numeric;
+	cropyear: string;
+	state: string;
+	county: string;
+	jointpayableline: string;
+	otherobligation: string;
+	dateplaced: datetime;
+	datereleased: datetime;
+	dateexpired: datetime;
+	government: string;
+	warning: string;
+}

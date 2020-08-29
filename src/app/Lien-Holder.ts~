@@ -1,0 +1,5 @@
+export interface Lien-Holder {
+	name: string;
+	city: string;
+	payableline: string;
+}

@@ -17,8 +17,7 @@ import { LienDetailComponent } from './lien-detail/lien-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
