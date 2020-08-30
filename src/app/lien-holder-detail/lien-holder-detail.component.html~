@@ -1,0 +1,18 @@
+<div *ngIf="lienholder">
+	<h2>{{lienholder.name | uppercase}} Details</h2>
+	<div>
+		<label>Name:
+			<input [(ngModel)]="lienholder.name" placeholder="Lien holder's name"/>	
+		</label>
+	</div>
+	<div>
+		<label>City:
+			<input [(ngModel)]="lienholder.city" placeholder="Lien holder's city"/>	
+		</label>
+	</div>
+	<div>
+		<label>Payable Line:
+			<input [(ngModel)]="lienholder.payableline" placeholder="Lien holder's payable name"/>	
+		</label>
+	</div>
+</div>

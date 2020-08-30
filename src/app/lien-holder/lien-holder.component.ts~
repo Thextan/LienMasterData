@@ -7,21 +7,18 @@ import { BANKS } from '../mock-lien-holders';
   templateUrl: './lien-holder.component.html',
   styleUrls: ['../app.component.css']
 })
+
 export class LienHolderComponent implements OnInit {
-		LienHolder = {
-			name: '',
-			city: '',
-			payableline: ''
-		}
-		selectedLienHolder: LienHolder;
-		onSelect(lineholder: LienHolder): void {
-			this.selectedLienHolder = lienholder;
-		}
+
 		lienholders = BANKS;
+		selectedLienHolder: LienHolder;
+				
+   constructor() { }
 
-  constructor() { }
+   ngOnInit(): void { }
 
-  ngOnInit(): void {
-  }
-
+	onSelect(lienholder: LienHolder): void {
+		this.selectedLienHolder = lienholder;
+	}
+		
 }

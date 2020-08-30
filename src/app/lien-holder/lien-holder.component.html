@@ -1,23 +1,9 @@
-<h2>{{lienholder.name | uppercase}} Details</h2>
-<div>
-	<label>Name:
-		<input [(ngModel)]="lienholder.name" placeholder="Lien holder's name"/>	
-	</label>
-</div>
-<div>
-	<label>City:
-		<input [(ngModel)]="lienholder.city" placeholder="Lien holder's city"/>	
-	</label>
-</div>
-<div>
-	<label>Payable Line:
-		<input [(ngModel)]="lienholder.payableline" placeholder="Lien holder's payable name"/>	
-	</label>
-</div>
-<br>
 <h2>Lien Holders</h2>
-<ul class="lienholders">
-	<li *ngFor="let lienholder of lienholders" (click)="onSelect(lienholder)">
-		<span class="bank">{{lienholder.city}}</span> {{lienholder.name}}
+<ul class="lienholder">
+	<li *ngFor="let lienholder of lienholders" [class.selected]="lienholder === selectedLienHolder" (click)="onSelect(lienholder)">
+		<span class="badge">😀</span> {{lienholder.name}}
 	</li>
 </ul>
+
+<app-lien-holder-detail [lienholder]="selectedLienHolder"></app-lien-holder-detail>  
+  

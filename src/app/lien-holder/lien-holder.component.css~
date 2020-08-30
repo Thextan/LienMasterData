@@ -1,5 +1,5 @@
 /* lienholderComponent's private CSS styles */
-lienholder {
+.lienholder {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
