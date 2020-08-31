@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LienHolder } from '../Lien-Holder';
+import { LiendataService } from '../liendata.service';
+import { MessageService } from '../message.service';
+import { Observable, of } from 'rxjs';
 import { BANKS } from '../mock-lien-holders';
 
 @Component({
@@ -10,15 +13,20 @@ import { BANKS } from '../mock-lien-holders';
 
 export class LienHolderComponent implements OnInit {
 
-		lienholders = BANKS;
-		selectedLienHolder: LienHolder;
-				
-   constructor() { }
+  lienholders: LienHolder[];
 
-   ngOnInit(): void { }
+  constructor(private liendataService: LiendataService) { }
 
-	onSelect(lienholder: LienHolder): void {
-		this.selectedLienHolder = lienholder;
-	}
-		
+  ngOnInit(): void {
+    this.getLienHolders();
+  }
+
+  getLienHolders(): void {
+    this.liendataService.getLienHolders().subscribe(lienholders => this.lienholders = lienholders);
+  }
+  getLienHolder(id: number): Observable<lienholder> {
+    this.messageService.add(`LiendataService: fetched lienholder id=${id}`);
+    return of(BANKS.find(lienholder => lienholder.id === id));
+  }
+
 }

@@ -1,0 +1,67 @@
+h1 {
+  color: #0049AD;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #007AC3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #333;
+  font-family: Arial, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* producerComponent's private CSS styles */
+.producer {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 25em;
+}
+.producer li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #0049AD;
+  color: white;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.producer li:hover {
+  color: #EE3A43;
+  background-color: #0049AD;
+  left: .1em;
+}
+.producer li.selected {
+  background-color: #0049AD;
+  color: #EE3A43;
+}
+.producer li.selected:hover {
+  background-color: #007AC3;
+  color: #333;
+}
+.producer .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color:#007AC3 ;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}

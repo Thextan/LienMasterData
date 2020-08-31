@@ -1,4 +1,5 @@
 export interface Producer {
+	id: number;
 	firstname: string;
 	middlename: string;
 	lastname: string;

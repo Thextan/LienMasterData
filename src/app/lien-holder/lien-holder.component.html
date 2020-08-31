@@ -1,9 +1,8 @@
 <h2>Lien Holders</h2>
 <ul class="lienholder">
-	<li *ngFor="let lienholder of lienholders" [class.selected]="lienholder === selectedLienHolder" (click)="onSelect(lienholder)">
-		<span class="badge">😀</span> {{lienholder.name}}
+	<li *ngFor="let lienholder of lienholders">
+		<a routerLink="/lhdetail/{{lienholder.id}}">
+			<span class="badge">֍</span> {{lienholder.name}}
+		</a>
 	</li>
-</ul>
-
-<app-lien-holder-detail [lienholder]="selectedLienHolder"></app-lien-holder-detail>  
-  
+</ul>  

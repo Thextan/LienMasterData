@@ -9,6 +9,7 @@ import { ProducerComponent } from './producer/producer.component';
 import { LienDetailComponent } from './lien-detail/lien-detail.component';
 import { LienHolderDetailComponent } from './lien-holder-detail/lien-holder-detail.component';
 import { ProducerDetailComponent } from './producer-detail/producer-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProducerDetailComponent } from './producer-detail/producer-detail.compo
     ProducerComponent,
     LienDetailComponent,
     LienHolderDetailComponent,
-    ProducerDetailComponent
+    ProducerDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
 <h1>{{title}}</h1>
-<app-lien-holder></app-lien-holder>
-<br>
-<app-producer></app-producer>
-<br>
-<br>
-<app-lien-detail></app-lien-detail>
-
+<nav>
+    <a routerLink="/lienholders">Lien Holders</a>
+    <a routerLink="/producers">Producers</a>
+    <a routerLink="/liendetails">Lien Details</a>
+</nav>
 <router-outlet></router-outlet>
+<br>
+<app-messages></app-messages>

@@ -1,15 +1,38 @@
+h1 {
+  color: #0049AD;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #007AC3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #333;
+  font-family: Arial, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* lienholderComponent's private CSS styles */
-lienholder {
+.lienholder {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width: 25em;
 }
 .lienholder li {
   cursor: pointer;
   position: relative;
   left: 0;
   background-color: #0049AD;
+  color: white;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -21,12 +44,12 @@ lienholder {
   left: .1em;
 }
 .lienholder li.selected {
-  background-color: #EE3A43;
-  color: white;
+  background-color: #0049AD;
+  color: #EE3A43;
 }
 .lienholder li.selected:hover {
-  background-color: #0049AD;
-  color: white;
+  background-color: #007AC3;
+  color: #333;
 }
 .lienholder .badge {
   display: inline-block;

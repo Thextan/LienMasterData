@@ -1,1 +1,48 @@
-<p>producer-detail works!</p>
+<div *ngIf="producer">
+
+    <h2>{{producer.firstname + ' ' + producer.middlename + ' ' + producer.lastname + ' ' + producer.suffix | uppercase | upprecase}} Details</h2>
+    <div>
+        <label>First Name:
+            <input [(ngModel)]="producer.firstname" placeholder="Producer's first name"/>	
+        </label>
+    </div>
+    <div>
+        <label>Middle Name:
+            <input [(ngModel)]="producer.middlename" placeholder="Producer's middle name"/>	
+        </label>
+    </div><div>
+        <label>Last Name:
+            <input [(ngModel)]="producer.lastname" placeholder="Producer's last name"/>	
+        </label>
+    </div><div>
+        <label>Suffix:
+            <input [(ngModel)]="producer.suffix" placeholder="Producer's suffix"/>	
+        </label>
+    </div>
+    <div>
+        <label>Address:
+            <input [(ngModel)]="producer.address1" placeholder="Producer's address"/>	
+        </label>
+    </div>
+    <div>
+        <label>Address 2:
+            <input [(ngModel)]="producer.address2" placeholder="Producer's additional address line"/>	
+        </label>
+    </div>
+    <div>
+        <label>City:
+            <input [(ngModel)]="producer.city" placeholder="Producer's city"/>	
+        </label>
+    </div>
+    <div>
+        <label>State:
+            <input [(ngModel)]="producer.state" placeholder="Producer's state"/>	
+        </label>
+    </div>
+    <div>
+        <label>ZipCode (+4):
+            <input [(ngModel)]="producer.zip" placeholder="Producer's ZipCode"/>	
+        </label>
+    </div>
+    
+</div>
