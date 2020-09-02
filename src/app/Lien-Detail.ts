@@ -1,4 +1,6 @@
 export interface LienDetail {
+	producerid: number;
+	lienholderid: number;
 	commoditylist: string;
 	quantity: number;
 	amount: number;

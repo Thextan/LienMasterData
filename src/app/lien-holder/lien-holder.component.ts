@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LienHolder } from '../Lien-Holder';
 import { LiendataService } from '../liendata.service';
-import { MessageService } from '../message.service';
-import { Observable, of } from 'rxjs';
-import { BANKS } from '../mock-lien-holders';
 
 @Component({
   selector: 'app-lien-holder',
@@ -17,16 +14,11 @@ export class LienHolderComponent implements OnInit {
 
   constructor(private liendataService: LiendataService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getLienHolders();
   }
-
   getLienHolders(): void {
-    this.liendataService.getLienHolders().subscribe(lienholders => this.lienholders = lienholders);
-  }
-  getLienHolder(id: number): Observable<lienholder> {
-    this.messageService.add(`LiendataService: fetched lienholder id=${id}`);
-    return of(BANKS.find(lienholder => lienholder.id === id));
+    this.liendataService.getLienHolders();
   }
 
 }

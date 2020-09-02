@@ -9,4 +9,6 @@ export interface Producer {
 	city: string;
 	state: string;
 	zip: string;
+	taxid: string;
+	pratronnumber: string;
 }

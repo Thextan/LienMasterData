@@ -2,7 +2,7 @@
 <ul class="lienholder">
 	<li *ngFor="let lienholder of lienholders">
 		<a routerLink="/lhdetail/{{lienholder.id}}">
-			<span class="badge">֍</span> {{lienholder.name}}
+			<span class="badge">{{lienholder.id}}</span> {{lienholder.name}}
 		</a>
 	</li>
 </ul>  

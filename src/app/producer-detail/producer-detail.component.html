@@ -44,5 +44,15 @@
             <input [(ngModel)]="producer.zip" placeholder="Producer's ZipCode"/>	
         </label>
     </div>
-    
+    <div>
+        <label>Tax ID:
+            <input [(ngModel)]="producer.taxid" placeholder="Producer's Tax ID"/>	
+        </label>
+    </div>
+    <div>
+        <label>Patron Number:
+            <input [(ngModel)]="producer.patronnumber" placeholder="Producer's Patron Number"/>	
+        </label>
+    </div>
+    <button (click)="goBack()">go back</button>
 </div>

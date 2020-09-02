@@ -1,8 +1,8 @@
-<h2>Producer</h2>
+<h2>Producers</h2>
 <ul class="producer">
 	<li *ngFor="let producer of producers">
 		<a routerLink="/pdetail/{{producer.id}}">
-			<span class="badge">֍</span> {{producer.name}}
+			<span class="badge">{{producer.id}}</span> {{producer.name}}
 		</a>
 	</li>
 </ul>
