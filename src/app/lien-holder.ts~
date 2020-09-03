@@ -1,4 +1,4 @@
-export interface lien-holder {
+export interface Lien-Holder {
 	name: string;
 	city: string;
 	payableline: string;

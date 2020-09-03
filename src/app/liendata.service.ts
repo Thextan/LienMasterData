@@ -25,8 +25,5 @@ export class LiendataService {
     this.messageService.add('ProducerService: fetched producer');
     return of();
   }
-  getProducer(id: number): Observable<Producer> {
-    this.messageService.add(`LiendataService: fetched producer id=${id}`);
-    return of(BANKS.find(producer => producer.id === id));
-  }
+
 }

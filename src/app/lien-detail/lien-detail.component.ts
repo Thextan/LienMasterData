@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { LienDetail } from '../Lien-Detail';
 
 @Component({
-  selector: 'app-lien-detail',
-  templateUrl: './lien-detail.component.html',
-  styleUrls: ['../app.component.css']
+	selector: 'app-lien-detail',
+	templateUrl: './lien-detail.component.html',
+	styleUrls: ['../app.component.css']
 })
 export class LienDetailComponent implements OnInit {
 	liendetail: LienDetail = {
+		lienholderid: 0,
+		producerid: 0,
 		commoditylist: 'Corn, Soybeans, Wheat',
 		quantity: -1,
 		amount: -1,
@@ -22,9 +24,9 @@ export class LienDetailComponent implements OnInit {
 		government: '',
 		warning: ''
 	};
-  constructor() { }
+	constructor() { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }

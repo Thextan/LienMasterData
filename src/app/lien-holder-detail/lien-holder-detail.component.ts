@@ -31,4 +31,7 @@ export class LienHolderDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+  save(): void {
+    this.liendataService.updateLienHolder(this.lienholder).subscribe(() => this.goBack())
+  }
 }

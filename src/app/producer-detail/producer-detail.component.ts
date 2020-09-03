@@ -27,7 +27,7 @@ export class ProducerDetailComponent implements OnInit {
 
   getProducer(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.liendataService.getProducer(id).subscribe(producer => this.producer = producer)
+    //this.liendataService.getProducer(id).subscribe(producer => this.producer = producer)
   }
   goBack(): void {
     this.location.back();
